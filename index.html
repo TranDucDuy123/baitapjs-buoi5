@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập Js buổi 5</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bài tập JS buổi 5</h1>
+        <h2>Học viên: Trần Đức Duy</h2>
+    </header>
+
+    <section class="container" id="con">
+        <label for="" class="menu">
+            <label onclick="choose1()" class="tab" id="tab-1">Bài 1</label>
+            <label onclick="choose2()" class="tab" id="tab-2">Bài 2</label>
+            <label onclick="choose3()" class="tab" id="tab-3">Bài 3</label>
+            <label onclick="choose4()" class="tab" id="tab-4">Bài 4</label>
+        </label>
+        <div class="layout" id="layout-1">
+            <h2>Quản lý tuyển sinh viên</h2>
+            <input type="number" placeholder="Điểm môn 1" id="input-1">
+            <input type="number" placeholder="Điểm môn 2" id="input-2">
+            <input type="number" placeholder="Điểm môn 3" id="input-3">
+            <div class="scores">
+                <select name="format" id="combo-1">
+                    <option value="0">Chọn khu vực</option>
+                    <option value="0">Không thuộc khu vực nào</option>
+                    <option value="2">A</option>
+                    <option value="1">B</option>
+                    <option value="0.5">C</option>
+                </select>
+                <select name="format" id="combo-2">
+                    <option value="0">Chọn đối tượng</option>
+                    <option value="0">Không thuộc đối tượng nào</option>
+                    <option value="2.5">1</option>
+                    <option value="1.5">2</option>
+                    <option value="1">3</option>
+                </select>
+            </div>
+
+            <div class="chool">
+                <input type="number" placeholder="Điểm chuẩn" id="diemchuan">
+            </div>
+
+            <div class="output">
+                <button onclick="check()" class="btn"> Kiểm tra</button>
+                <p id="output-1"></p>
+            </div>
+        </div>
+
+
+        <div class="layout" id="layout-2">
+            <h2>Tính tiền điện</h2>
+            <input type="text" placeholder="Họ tên" id="text-ten">
+            <input type="number" placeholder="Số kw điện đã sử dụng" id="kw">
+            <button onclick="tinhTien()" class="btn" id="tinhTien"> Tính Tiền</button>
+            <div class="output">
+                <p id="output-ten"></p>
+                <p id="output-tien"></p>
+            </div>
+        </div>
+    </section>
+
+    <script src=" ./js.js">
+    </script>
+</body>
+
+</html>

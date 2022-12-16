@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #FF0099;
+    --bg-color: lightcoral;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 50%;
+    height: 70vh;
+    border-radius: 0 20px 20px 20px;
+    border: #FF0099 solid 3px;
+    background-color: var(--bg-color);
+    position: relative;
+    margin-top: 50px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 100px;
+    position: absolute;
+    top: -3px;
+    left: -100px;
+}
+
+.tab {
+    height: 30px;
+    width: 100px;
+    background-color: aliceblue;
+    border: #ecb1d5 solid 3px;
+    border-right: #FF0099 solid 3px;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightsalmon;
+}
+
+.tab:hover {
+    background-color: var(--primary-color);
+    color: aliceblue;
+    border: #FF0099 solid 3px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-size: 40px;
+}
+
+.layout {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.layout h2 {
+    color: papayawhip;
+}
+
+
+input,
+select {
+    margin: 10px 0;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    border: var(--primary-color) solid 2px;
+    padding: 10px;
+}
+
+.output {
+    margin-top: 20px;
+}
+
+.output p {
+    font-size: 40px;
+    color: var(--primary-color);
+    text-align: center;
+    background-color: rgb(248, 199, 241);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #ab2374;
+}
+
+#layout-2 {
+    display: flex;
+    justify-content: flex-start;
+    padding: 50px;
+}
+
+#layout-2 input {
+    margin: 20px 0;
+}
+
+#layout-2 {
+    display: none;
+}
+
+#tab-1 {
+    background-color: lightcoral;
+    color: aliceblue;
+    border: #FF0099 solid 3px;
+    border-right: none;
+}
+
+#layout-1 {
+    display: flex;
+}
