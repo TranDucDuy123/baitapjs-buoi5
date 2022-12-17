@@ -86,6 +86,19 @@ function check() {
 /*
 ex2:
 
+input: 
+    + lấy thông tin Tên số kư sử dụng từ người nhập
+algorithm: 
+    + tạo 5 biến tương ứng với 5 mức giá điện: gia1,gia2,gia3,gia4,gia5
+    + tongtien là tổng số tiền điện
+    + nếu : 
+        - kwEL > 50 thì tongtien = kWEL * gia1
+        - 50 < kwEL  100 thì tongtien = kWEL * gia2
+        - 100 < kwEL < 200 thì tongtien = kWEL * gia3
+        - 200 < kwEL < 350 thì tongtien = kWEL * gia4
+        - kwEL > 350 thì tongtien = kWEL * gia5
+output: 
+    + xuất ra tên và tổng tiền điện   
 
 */
 var gia1 = 500;
