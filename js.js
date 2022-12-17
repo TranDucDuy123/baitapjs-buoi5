@@ -83,10 +83,6 @@ function check() {
         document.getElementById(`output-1`).innerHTML = "rớt";
 }
 
-
-
-
-
 /*
 ex2:
 
@@ -114,5 +110,5 @@ function tinhTien() {
         tongtien = kwEL * 1300;
     }
     document.getElementById(`output-ten`).innerHTML = "Họ tên:" + hotenEL;
-    document.getElementById(`output-tien`).innerHTML = "Tổng tiền điện" + tongtien + "đ";
+    document.getElementById(`output-tien`).innerHTML = "Tổng tiền điện:" + tongtien + "đ";
 }
